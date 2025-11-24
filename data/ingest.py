@@ -5,6 +5,7 @@ import json
 import urllib.parse
 from bs4 import BeautifulSoup
 from datetime import datetime
+import re
 
 DATA_DIR = "data"
 OUTPUT_FILE = os.path.join(DATA_DIR, "market_data.json")
@@ -68,6 +69,63 @@ def download_pdf(url):
     return PDF_PATH
 
 
+def fetch_boj_meeting_dates():
+    """
+    Fetch upcoming BoJ monetary policy meeting dates from the official website.
+    Returns a list of meeting dates in ISO format (YYYY-MM-DD).
+    """
+    url = "https://www.boj.or.jp/mopo/mpmsche_minu/index.htm"
+    print(f"Fetching BoJ meeting schedule from {url}...")
+
+    try:
+        resp = requests.get(url)
+        resp.raise_for_status()
+        soup = BeautifulSoup(resp.content, "html.parser")
+
+        meetings = []
+        current_year = datetime.now().year
+        current_date = datetime.now()
+
+        # Find all links that contain meeting dates
+        # Pattern: "12月18日（木）・19日（金）" or "1月23日（木）・24日（金）"
+        date_pattern = re.compile(r"(\d{1,2})月(\d{1,2})日（.）・(\d{1,2})日")
+
+        # Get all text content
+        page_text = soup.get_text()
+
+        # Find all date matches
+        for match in date_pattern.finditer(page_text):
+            month = int(match.group(1))
+            day2 = int(match.group(3))  # Second day is when decisions are announced
+
+            # Determine year (if month < current month, it's next year)
+            year = current_year
+            if month < current_date.month or (
+                month == current_date.month and day2 < current_date.day
+            ):
+                year = current_year + 1
+
+            try:
+                meeting_date = datetime(year, month, day2)
+                # Only include future meetings
+                if meeting_date > current_date:
+                    iso_date = meeting_date.strftime("%Y-%m-%d")
+                    if iso_date not in meetings:  # Avoid duplicates
+                        meetings.append(iso_date)
+            except ValueError:
+                # Invalid date, skip
+                continue
+
+        # Sort meetings chronologically
+        meetings.sort()
+        print(f"Found {len(meetings)} upcoming meetings: {meetings[:3]}...")
+        return meetings
+
+    except Exception as e:
+        print(f"Warning: Could not fetch BoJ meeting dates: {e}")
+        return []
+
+
 def parse_pdf(pdf_path):
     print("Parsing PDF...")
     data = []
@@ -115,7 +173,7 @@ def parse_pdf(pdf_path):
             # Rate might be string, keep it as is or convert to float
             try:
                 rate_val = float(rate)
-            except:
+            except (ValueError, TypeError):
                 continue
 
             data.append({"tenor": tenor, "rate": rate_val})
@@ -135,11 +193,15 @@ def main():
             print("No rates extracted!")
             return
 
+        # Fetch BoJ meeting dates
+        boj_meetings = fetch_boj_meeting_dates()
+
         output = {
             "updated_at": datetime.now().isoformat(),
             "source_date": date_str,
             "source_url": url,
             "rates": rates,
+            "boj_meetings": boj_meetings,
         }
 
         with open(OUTPUT_FILE, "w") as f:
@@ -147,6 +209,7 @@ def main():
 
         print(f"Data saved to {OUTPUT_FILE}")
         print(f"Extracted {len(rates)} rates from {date_str}")
+        print(f"Found {len(boj_meetings)} upcoming BoJ meetings")
 
     except Exception as e:
         print(f"Error: {e}")

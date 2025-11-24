@@ -1,7 +1,7 @@
 from flask import Flask, render_template, jsonify
 import json
 import os
-from metrics.calculations import process_market_data
+from metrics import process_market_data
 
 app = Flask(__name__, template_folder="../templates", static_folder="../static")
 
