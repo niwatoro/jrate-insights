@@ -1,9 +1,10 @@
 import pandas as pd
 from datetime import datetime
 import numpy as np
+from typing import Any, Dict, Optional
 
 
-def calculate_rate_probabilities(data_json):
+def calculate_rate_probabilities(data_json: Dict[str, Any]) -> Optional[Dict[str, Any]]:
     """
     Calculate BoJ rate hike/cut probabilities based on market-implied rates.
     """
@@ -60,7 +61,7 @@ def calculate_rate_probabilities(data_json):
     days_to_meeting = (next_meeting - source_date).days
 
     # Calculate implied rate
-    def calculate_implied_rate(df, days_pre, r0):
+    def calculate_implied_rate(df: pd.DataFrame, days_pre: int, r0: float) -> float:
         row_post = df[df["days"] >= days_to_meeting].iloc[0]
         r_post = row_post["rate"]
         days_post = row_post["days"] - days_pre
@@ -105,7 +106,7 @@ def calculate_rate_probabilities(data_json):
     }
 
 
-def process_market_data(data_json):
+def process_market_data(data_json: Dict[str, Any]) -> Optional[Dict[str, Any]]:
     """
     Process raw market data JSON into a structured format for the dashboard.
     """
@@ -116,7 +117,7 @@ def process_market_data(data_json):
     df = pd.DataFrame(rates)
 
     # Convert tenors to approx years for plotting
-    def tenor_to_years(t):
+    def tenor_to_years(t: str) -> float:
         t = t.upper()
         if "D" in t:
             return float(t.replace("D", "")) / 365

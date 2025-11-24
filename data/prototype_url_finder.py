@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import urllib.parse
 
 
-def find_pdf_with_xpath_logic():
+def find_pdf_with_xpath_logic() -> None:
     url = "https://www.jpx.co.jp/jscc/toukei_irs.html"
     print(f"Fetching {url}...")
     resp = requests.get(url)
@@ -41,7 +41,7 @@ def find_pdf_with_xpath_logic():
                     link = target_td.find("a")
                     if link:
                         href = link.get("href")
-                        full_url = urllib.parse.urljoin(url, href)
+                        full_url = urllib.parse.urljoin(url, str(href) if href else "")
                         print(f"Found URL via strict path: {full_url}")
                         return
                     else:

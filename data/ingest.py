@@ -3,16 +3,17 @@ import pdfplumber
 import os
 import json
 import urllib.parse
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, Tag
 from datetime import datetime
 import re
+from typing import List, Optional, Tuple, Any, Dict
 
 DATA_DIR = "data"
 OUTPUT_FILE = os.path.join(DATA_DIR, "market_data.json")
 PDF_PATH = os.path.join(DATA_DIR, "latest_rates.pdf")
 
 
-def get_pdf_url():
+def get_pdf_url() -> str:
     url = "https://www.jpx.co.jp/jscc/toukei_irs.html"
     print(f"Fetching {url}...")
     resp = requests.get(url)
@@ -29,18 +30,19 @@ def get_pdf_url():
         # Fallback: try to find the table directly
         print("Div structure changed, trying to find table directly...")
         tables = main_body.find_all("table")
-        for table in tables:
-            rows = table.find_all("tr")
+        for tbl in tables:
+            rows = tbl.find_all("tr")
             if rows:
                 cols = rows[0].find_all("td")
                 if len(cols) >= 2:
                     link = cols[1].find("a")
-                    if link and link.get("href", "").endswith(".pdf"):
-                        return urllib.parse.urljoin(url, link.get("href"))
+                    href = link.get("href", "") if link else ""
+                    if link and isinstance(href, str) and href.endswith(".pdf"):
+                        return urllib.parse.urljoin(url, href)
         raise Exception("Could not find PDF link in any table")
 
     target_div = divs[2]
-    table = target_div.find("table")
+    table: Optional[Tag] = target_div.find("table")
     if not table:
         raise Exception("No table in target div")
 
@@ -57,10 +59,11 @@ def get_pdf_url():
     if not link:
         raise Exception("No link in 2nd td")
 
-    return urllib.parse.urljoin(url, link.get("href"))
+    href = link.get("href")
+    return urllib.parse.urljoin(url, str(href) if href else "")
 
 
-def download_pdf(url):
+def download_pdf(url: str) -> str:
     print(f"Downloading PDF from {url}...")
     resp = requests.get(url)
     resp.raise_for_status()
@@ -69,7 +72,7 @@ def download_pdf(url):
     return PDF_PATH
 
 
-def fetch_boj_meeting_dates():
+def fetch_boj_meeting_dates() -> List[str]:
     """
     Fetch upcoming BoJ monetary policy meeting dates from the official website.
     Returns a list of meeting dates in ISO format (YYYY-MM-DD).
@@ -126,20 +129,20 @@ def fetch_boj_meeting_dates():
         return []
 
 
-def parse_pdf(pdf_path):
+def parse_pdf(pdf_path: str) -> Tuple[Optional[str], List[Dict[str, Any]]]:
     print("Parsing PDF...")
     data = []
     extracted_date = None
 
     with pdfplumber.open(pdf_path) as pdf:
         if not pdf.pages:
-            return None, None
+            return None, []
 
         page = pdf.pages[0]
         tables = page.extract_tables()
 
         if not tables:
-            return None, None
+            return None, []
 
         table = tables[0]
 
@@ -181,7 +184,7 @@ def parse_pdf(pdf_path):
     return extracted_date, data
 
 
-def main():
+def main() -> None:
     try:
         url = get_pdf_url()
         print(f"Found PDF URL: {url}")

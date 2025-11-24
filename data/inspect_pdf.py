@@ -7,7 +7,7 @@ PDF_PATH = os.path.join(DATA_DIR, "settlement_rates.pdf")
 URL = "https://www.jpx.co.jp/jscc/cimhll0000000umu-att/SettlementRates_20251121.pdf"
 
 
-def inspect_pdf():
+def inspect_pdf() -> None:
     print(f"Downloading {URL}...")
     resp = requests.get(URL)
     resp.raise_for_status()
