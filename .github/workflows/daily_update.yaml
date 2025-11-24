@@ -31,5 +31,5 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add data/market_data.json
-          git commit -m "Update market data [skip ci]" || exit 0
+          git commit -m "chore: update market data [skip ci]" || exit 0
           git push
