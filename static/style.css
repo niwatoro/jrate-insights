@@ -214,10 +214,12 @@ h1 {
 
 /* Numeric data styling */
 .data-table td:nth-child(2),
-.data-table td:nth-child(3) {
+.data-table td:nth-child(3),
+.data-table td:nth-child(4),
+.data-table td:nth-child(5),
+.data-table td:nth-child(6) {
     text-align: right;
     font-weight: bold;
-    color: var(--bloomberg-light-orange);
 }
 
 /* Footer */

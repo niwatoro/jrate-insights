@@ -28,7 +28,15 @@ def extract_issuer(name: str) -> str:
     if not isinstance(name, str):
         return str(name) if name is not None else ""
     # Remove full-width and half-width digits at the end, and common suffixes
-    s = re.sub(r"劣$", "", re.sub(r"\s*\d+.*$", "", name))
+    s = re.sub(
+        r"劣$",
+        "",
+        re.sub(
+            r"(?<=[^0-9A-Za-z])-",
+            "ー",
+            re.sub(r"\s*\d+.*$", "", name),
+        ),
+    )
     return unicodedata.normalize("NFKC", s.strip())
 
 

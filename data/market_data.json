@@ -1,5 +1,5 @@
 {
-  "updated_at": "2025-11-24T18:26:54.032324",
+  "updated_at": "2025-11-24T18:43:34.498328",
   "source_date": "2025/11/21",
   "source_url": "https://www.jpx.co.jp/jscc/cimhll0000000umu-att/SettlementRates_20251121.pdf",
   "rates": [
@@ -190,7 +190,7 @@
       "pd_10y": 21.95
     },
     {
-      "issuer": "\u30a4-\u30ec\u30c3\u30af\u30b9",
+      "issuer": "\u30a4\u30fc\u30ec\u30c3\u30af\u30b9",
       "n_bonds": 2,
       "avg_spread_bps": 218.9,
       "avg_years": 2.0,
@@ -200,7 +200,7 @@
       "pd_10y": 21.59
     },
     {
-      "issuer": "\u30cd\u30af\u30b9\u30c6-\u30b8",
+      "issuer": "\u30cd\u30af\u30b9\u30c6\u30fc\u30b8",
       "n_bonds": 1,
       "avg_spread_bps": 198.2,
       "avg_years": 1.7,
@@ -220,7 +220,7 @@
       "pd_10y": 18.21
     },
     {
-      "issuer": "\u697d\u5929\u30b0\u30eb-\u30d7",
+      "issuer": "\u697d\u5929\u30b0\u30eb\u30fc\u30d7",
       "n_bonds": 8,
       "avg_spread_bps": 180.3,
       "avg_years": 4.9,
@@ -250,7 +250,7 @@
       "pd_10y": 17.84
     },
     {
-      "issuer": "\u30e0\u30b2\u30f3\u30a8\u30b9\u30c6-\u30c8",
+      "issuer": "\u30e0\u30b2\u30f3\u30a8\u30b9\u30c6\u30fc\u30c8",
       "n_bonds": 1,
       "avg_spread_bps": 174.2,
       "avg_years": 2.6,
@@ -290,7 +290,7 @@
       "pd_10y": 16.56
     },
     {
-      "issuer": "\u30d5-\u30b8\u30e3-\u30b9HD",
+      "issuer": "\u30d5\u30fc\u30b8\u30e3\u30fc\u30b9HD",
       "n_bonds": 1,
       "avg_spread_bps": 155.9,
       "avg_years": 1.5,
@@ -320,7 +320,7 @@
       "pd_10y": 15.13
     },
     {
-      "issuer": "\u30d7\u30ec\u30df\u30a2\u30e0\u30a6\u30a9-\u30bf-HD",
+      "issuer": "\u30d7\u30ec\u30df\u30a2\u30e0\u30a6\u30a9\u30fc\u30bf\u30fcHD",
       "n_bonds": 8,
       "avg_spread_bps": 144.9,
       "avg_years": 1.6,
@@ -330,7 +330,7 @@
       "pd_10y": 14.87
     },
     {
-      "issuer": "\u697d\u5929\u30ab-\u30c9",
+      "issuer": "\u697d\u5929\u30ab\u30fc\u30c9",
       "n_bonds": 10,
       "avg_spread_bps": 140.3,
       "avg_years": 2.2,
@@ -360,7 +360,7 @@
       "pd_10y": 13.25
     },
     {
-      "issuer": "TRE\u30db-\u30eb\u30c7\u30a3\u30f3\u30b0\u30b9",
+      "issuer": "TRE\u30db\u30fc\u30eb\u30c7\u30a3\u30f3\u30b0\u30b9",
       "n_bonds": 1,
       "avg_spread_bps": 125.5,
       "avg_years": 2.8,
@@ -370,7 +370,7 @@
       "pd_10y": 13.02
     },
     {
-      "issuer": "GMO\u30a4\u30f3\u30bf-\u30cd\u30c3\u30c8",
+      "issuer": "GMO\u30a4\u30f3\u30bf\u30fc\u30cd\u30c3\u30c8",
       "n_bonds": 10,
       "avg_spread_bps": 122.3,
       "avg_years": 2.4,
@@ -380,7 +380,7 @@
       "pd_10y": 12.71
     },
     {
-      "issuer": "JA\u4e09\u4e95\u30ea-\u30b9",
+      "issuer": "JA\u4e09\u4e95\u30ea\u30fc\u30b9",
       "n_bonds": 20,
       "avg_spread_bps": 121.3,
       "avg_years": 2.3,
@@ -390,7 +390,7 @@
       "pd_10y": 12.61
     },
     {
-      "issuer": "\u30ec\u30b9\u30bf-",
+      "issuer": "\u30ec\u30b9\u30bf\u30fc",
       "n_bonds": 1,
       "avg_spread_bps": 121.0,
       "avg_years": 2.3,
@@ -430,7 +430,7 @@
       "pd_10y": 12.14
     },
     {
-      "issuer": "\u798f\u5ca1\u30ea-\u30c8",
+      "issuer": "\u798f\u5ca1\u30ea\u30fc\u30c8",
       "n_bonds": 2,
       "avg_spread_bps": 116.6,
       "avg_years": 9.7,
@@ -480,7 +480,7 @@
       "pd_10y": 11.55
     },
     {
-      "issuer": "\u30b0\u30ea-",
+      "issuer": "\u30b0\u30ea\u30fc",
       "n_bonds": 2,
       "avg_spread_bps": 109.1,
       "avg_years": 1.3,
@@ -500,7 +500,7 @@
       "pd_10y": 10.94
     },
     {
-      "issuer": "\u30a4\u30aa\u30f3\u30ea-\u30c8\u6295\u8cc7\u6cd5\u4eba",
+      "issuer": "\u30a4\u30aa\u30f3\u30ea\u30fc\u30c8\u6295\u8cc7\u6cd5\u4eba",
       "n_bonds": 6,
       "avg_spread_bps": 101.5,
       "avg_years": 4.3,
@@ -530,7 +530,7 @@
       "pd_10y": 10.13
     },
     {
-      "issuer": "\u30ab\u30ca\u30c7\u30a3\u30a2\u30f3\u30fb\u30bd-\u30e9-\u6295",
+      "issuer": "\u30ab\u30ca\u30c7\u30a3\u30a2\u30f3\u30fb\u30bd\u30fc\u30e9\u30fc\u6295",
       "n_bonds": 2,
       "avg_spread_bps": 95.3,
       "avg_years": 2.0,
@@ -570,7 +570,7 @@
       "pd_10y": 9.61
     },
     {
-      "issuer": "\u30b8\u30e3\u30d1\u30f3\u30fb\u30db\u30c6\u30eb\u30fb\u30ea-\u30c8",
+      "issuer": "\u30b8\u30e3\u30d1\u30f3\u30fb\u30db\u30c6\u30eb\u30fb\u30ea\u30fc\u30c8",
       "n_bonds": 7,
       "avg_spread_bps": 90.2,
       "avg_years": 2.8,
@@ -580,7 +580,7 @@
       "pd_10y": 9.53
     },
     {
-      "issuer": "\u661f\u91ce\u30ea\u30be-\u30c8\u30fb\u30ea-\u30c8\u6295",
+      "issuer": "\u661f\u91ce\u30ea\u30be\u30fc\u30c8\u30fb\u30ea\u30fc\u30c8\u6295",
       "n_bonds": 3,
       "avg_spread_bps": 89.9,
       "avg_years": 7.5,
@@ -600,7 +600,7 @@
       "pd_10y": 9.48
     },
     {
-      "issuer": "\u30a8\u30a2\u30fb\u30a6\u30a9-\u30bf-",
+      "issuer": "\u30a8\u30a2\u30fb\u30a6\u30a9\u30fc\u30bf\u30fc",
       "n_bonds": 9,
       "avg_spread_bps": 88.9,
       "avg_years": 3.5,
@@ -630,7 +630,7 @@
       "pd_10y": 9.33
     },
     {
-      "issuer": "\u30aa-\u30d7\u30f3\u30cf\u30a6\u30b9G",
+      "issuer": "\u30aa\u30fc\u30d7\u30f3\u30cf\u30a6\u30b9G",
       "n_bonds": 1,
       "avg_spread_bps": 85.7,
       "avg_years": 1.6,
@@ -660,7 +660,7 @@
       "pd_10y": 9.02
     },
     {
-      "issuer": "\u30a4\u30c1\u30cd\u30f3\u30db-\u30eb\u30c7\u30a3\u30f3\u30b0\u30b9",
+      "issuer": "\u30a4\u30c1\u30cd\u30f3\u30db\u30fc\u30eb\u30c7\u30a3\u30f3\u30b0\u30b9",
       "n_bonds": 3,
       "avg_spread_bps": 85.0,
       "avg_years": 1.9,
@@ -680,7 +680,7 @@
       "pd_10y": 9.01
     },
     {
-      "issuer": "\u30ec\u30be\u30ca\u30c3\u30af\u30fb\u30db-\u30eb\u30c7\u30a3\u30f3\u30b0\u30b9",
+      "issuer": "\u30ec\u30be\u30ca\u30c3\u30af\u30fb\u30db\u30fc\u30eb\u30c7\u30a3\u30f3\u30b0\u30b9",
       "n_bonds": 4,
       "avg_spread_bps": 84.6,
       "avg_years": 4.7,
@@ -690,7 +690,7 @@
       "pd_10y": 8.97
     },
     {
-      "issuer": "ANA\u30db-\u30eb\u30c7\u30a3\u30f3\u30b0\u30b9",
+      "issuer": "ANA\u30db\u30fc\u30eb\u30c7\u30a3\u30f3\u30b0\u30b9",
       "n_bonds": 11,
       "avg_spread_bps": 84.4,
       "avg_years": 6.4,
@@ -700,7 +700,7 @@
       "pd_10y": 8.95
     },
     {
-      "issuer": "\u5e73\u548c\u4e0d\u52d5\u7523\u30ea-\u30c8",
+      "issuer": "\u5e73\u548c\u4e0d\u52d5\u7523\u30ea\u30fc\u30c8",
       "n_bonds": 5,
       "avg_spread_bps": 84.1,
       "avg_years": 3.9,
@@ -710,7 +710,7 @@
       "pd_10y": 8.92
     },
     {
-      "issuer": "KPP\u30b0\u30eb-\u30d7HD",
+      "issuer": "KPP\u30b0\u30eb\u30fc\u30d7HD",
       "n_bonds": 2,
       "avg_spread_bps": 84.0,
       "avg_years": 2.8,
@@ -760,7 +760,7 @@
       "pd_10y": 8.57
     },
     {
-      "issuer": "SBI\u30ea-\u30b7\u30f3\u30b0\u30b5-\u30d3\u30b9",
+      "issuer": "SBI\u30ea\u30fc\u30b7\u30f3\u30b0\u30b5\u30fc\u30d3\u30b9",
       "n_bonds": 1,
       "avg_spread_bps": 80.4,
       "avg_years": 2.3,
@@ -770,7 +770,7 @@
       "pd_10y": 8.55
     },
     {
-      "issuer": "\u30b6\u30a4\u30de\u30c3\u30af\u30b9\u30fb\u30ea-\u30c8\u6295",
+      "issuer": "\u30b6\u30a4\u30de\u30c3\u30af\u30b9\u30fb\u30ea\u30fc\u30c8\u6295",
       "n_bonds": 1,
       "avg_spread_bps": 80.5,
       "avg_years": 3.2,
@@ -820,7 +820,7 @@
       "pd_10y": 8.44
     },
     {
-      "issuer": "\u5c0f\u68ee\u30b3-\u30dd\u30ec-\u30b7\u30e7\u30f3",
+      "issuer": "\u5c0f\u68ee\u30b3\u30fc\u30dd\u30ec\u30fc\u30b7\u30e7\u30f3",
       "n_bonds": 1,
       "avg_spread_bps": 79.0,
       "avg_years": 4.4,
@@ -870,7 +870,7 @@
       "pd_10y": 8.21
     },
     {
-      "issuer": "\u30c8-\u30bb\u30a4\u30fb\u30ea-\u30c8\u6295",
+      "issuer": "\u30c8\u30fc\u30bb\u30a4\u30fb\u30ea\u30fc\u30c8\u6295",
       "n_bonds": 1,
       "avg_spread_bps": 76.9,
       "avg_years": 5.8,
@@ -930,7 +930,7 @@
       "pd_10y": 8.11
     },
     {
-      "issuer": "One\u30ea-\u30c8\u6295\u8cc7\u6cd5\u4eba",
+      "issuer": "One\u30ea\u30fc\u30c8\u6295\u8cc7\u6cd5\u4eba",
       "n_bonds": 5,
       "avg_spread_bps": 75.4,
       "avg_years": 5.2,
@@ -980,7 +980,7 @@
       "pd_10y": 7.97
     },
     {
-      "issuer": "\u65e5\u672c\u30ea-\u30c8\u6295\u8cc7\u6cd5\u4eba",
+      "issuer": "\u65e5\u672c\u30ea\u30fc\u30c8\u6295\u8cc7\u6cd5\u4eba",
       "n_bonds": 5,
       "avg_spread_bps": 73.9,
       "avg_years": 3.8,
@@ -1010,7 +1010,7 @@
       "pd_10y": 7.82
     },
     {
-      "issuer": "\u30b9\u30bf-\u30a2\u30b8\u30a2\u4e0d\u52d5\u7523\u6295",
+      "issuer": "\u30b9\u30bf\u30fc\u30a2\u30b8\u30a2\u4e0d\u52d5\u7523\u6295",
       "n_bonds": 2,
       "avg_spread_bps": 73.0,
       "avg_years": 3.4,
@@ -1030,7 +1030,7 @@
       "pd_10y": 7.76
     },
     {
-      "issuer": "\u30b9\u30bf-\u30c4\u30d7\u30ed\u30b7-\u30c9\u6295",
+      "issuer": "\u30b9\u30bf\u30fc\u30c4\u30d7\u30ed\u30b7\u30fc\u30c9\u6295",
       "n_bonds": 4,
       "avg_spread_bps": 72.6,
       "avg_years": 4.4,
@@ -1050,7 +1050,7 @@
       "pd_10y": 7.74
     },
     {
-      "issuer": "\u65e5\u672c\u4f4f\u5b85\u30ed-\u30f3",
+      "issuer": "\u65e5\u672c\u4f4f\u5b85\u30ed\u30fc\u30f3",
       "n_bonds": 2,
       "avg_spread_bps": 72.6,
       "avg_years": 2.9,
@@ -1110,7 +1110,7 @@
       "pd_10y": 7.62
     },
     {
-      "issuer": "LINE\u30e4\u30d5-",
+      "issuer": "LINE\u30e4\u30d5\u30fc",
       "n_bonds": 4,
       "avg_spread_bps": 71.0,
       "avg_years": 3.2,
@@ -1120,7 +1120,7 @@
       "pd_10y": 7.58
     },
     {
-      "issuer": "SBI\u30db-\u30eb\u30c7\u30a3\u30f3\u30b0\u30b9",
+      "issuer": "SBI\u30db\u30fc\u30eb\u30c7\u30a3\u30f3\u30b0\u30b9",
       "n_bonds": 19,
       "avg_spread_bps": 71.0,
       "avg_years": 2.1,
@@ -1140,7 +1140,7 @@
       "pd_10y": 7.58
     },
     {
-      "issuer": "\u65e5\u672c\u30d7\u30ed\u30ed\u30b8\u30b9\u30ea-\u30c8",
+      "issuer": "\u65e5\u672c\u30d7\u30ed\u30ed\u30b8\u30b9\u30ea\u30fc\u30c8",
       "n_bonds": 11,
       "avg_spread_bps": 71.1,
       "avg_years": 6.9,
@@ -1160,7 +1160,7 @@
       "pd_10y": 7.57
     },
     {
-      "issuer": "\u6587\u5316\u30b7\u30e4\u30c3\u30bf-",
+      "issuer": "\u6587\u5316\u30b7\u30e4\u30c3\u30bf\u30fc",
       "n_bonds": 1,
       "avg_spread_bps": 70.7,
       "avg_years": 3.2,
@@ -1170,7 +1170,7 @@
       "pd_10y": 7.55
     },
     {
-      "issuer": "\u30e9\u30b5-\u30eb\u30ed\u30b8\u30dd-\u30c8\u6295",
+      "issuer": "\u30e9\u30b5\u30fc\u30eb\u30ed\u30b8\u30dd\u30fc\u30c8\u6295",
       "n_bonds": 6,
       "avg_spread_bps": 70.0,
       "avg_years": 3.6,
@@ -1210,7 +1210,7 @@
       "pd_10y": 7.45
     },
     {
-      "issuer": "\u30b9\u30b7\u30ed-\u30b0\u30ed-\u30d0\u30ebHD",
+      "issuer": "\u30b9\u30b7\u30ed\u30fc\u30b0\u30ed\u30fc\u30d0\u30ebHD",
       "n_bonds": 1,
       "avg_spread_bps": 69.0,
       "avg_years": 4.2,
@@ -1220,7 +1220,7 @@
       "pd_10y": 7.38
     },
     {
-      "issuer": "Z\u30db-\u30eb\u30c7\u30a3\u30f3\u30b0\u30b9",
+      "issuer": "Z\u30db\u30fc\u30eb\u30c7\u30a3\u30f3\u30b0\u30b9",
       "n_bonds": 7,
       "avg_spread_bps": 68.6,
       "avg_years": 2.7,
@@ -1280,7 +1280,7 @@
       "pd_10y": 7.22
     },
     {
-      "issuer": "\u30e4\u30d5-",
+      "issuer": "\u30e4\u30d5\u30fc",
       "n_bonds": 4,
       "avg_spread_bps": 67.5,
       "avg_years": 2.4,
@@ -1310,7 +1310,7 @@
       "pd_10y": 7.23
     },
     {
-      "issuer": "\u6771\u96fb\u30d1\u30ef-\u30b0\u30ea\u30c3\u30c9",
+      "issuer": "\u6771\u96fb\u30d1\u30ef\u30fc\u30b0\u30ea\u30c3\u30c9",
       "n_bonds": 66,
       "avg_spread_bps": 67.4,
       "avg_years": 6.5,
@@ -1320,7 +1320,7 @@
       "pd_10y": 7.22
     },
     {
-      "issuer": "\u962a\u6025\u30ea-\u30c8\u6295\u8cc7\u6cd5\u4eba",
+      "issuer": "\u962a\u6025\u30ea\u30fc\u30c8\u6295\u8cc7\u6cd5\u4eba",
       "n_bonds": 1,
       "avg_spread_bps": 67.6,
       "avg_years": 6.0,
@@ -1350,7 +1350,7 @@
       "pd_10y": 7.19
     },
     {
-      "issuer": "\u65e5\u672c\u30d4\u30e9-\u5de5\u696d",
+      "issuer": "\u65e5\u672c\u30d4\u30e9\u30fc\u5de5\u696d",
       "n_bonds": 1,
       "avg_spread_bps": 66.9,
       "avg_years": 3.1,
@@ -1400,7 +1400,7 @@
       "pd_10y": 6.98
     },
     {
-      "issuer": "SOSiLA\u7269\u6d41\u30ea-\u30c8",
+      "issuer": "SOSiLA\u7269\u6d41\u30ea\u30fc\u30c8",
       "n_bonds": 2,
       "avg_spread_bps": 65.0,
       "avg_years": 2.1,
@@ -1420,7 +1420,7 @@
       "pd_10y": 6.96
     },
     {
-      "issuer": "\u30c8\u30d4-\u5de5\u696d",
+      "issuer": "\u30c8\u30d4\u30fc\u5de5\u696d",
       "n_bonds": 6,
       "avg_spread_bps": 65.0,
       "avg_years": 2.6,
@@ -1440,7 +1440,7 @@
       "pd_10y": 6.93
     },
     {
-      "issuer": "\u6771\u96fb\u30ea\u30cb\u30e5-\u30a2\u30d6\u30ebP",
+      "issuer": "\u6771\u96fb\u30ea\u30cb\u30e5\u30fc\u30a2\u30d6\u30ebP",
       "n_bonds": 5,
       "avg_spread_bps": 64.7,
       "avg_years": 4.4,
@@ -1470,7 +1470,7 @@
       "pd_10y": 6.92
     },
     {
-      "issuer": "\u30a4\u30aa\u30f3\u30e2-\u30eb",
+      "issuer": "\u30a4\u30aa\u30f3\u30e2\u30fc\u30eb",
       "n_bonds": 22,
       "avg_spread_bps": 64.3,
       "avg_years": 4.2,
@@ -1490,7 +1490,7 @@
       "pd_10y": 6.9
     },
     {
-      "issuer": "\u6771\u6025\u30ea\u30a2\u30eb\u30fb\u30a8\u30b9\u30c6-\u30c8",
+      "issuer": "\u6771\u6025\u30ea\u30a2\u30eb\u30fb\u30a8\u30b9\u30c6\u30fc\u30c8",
       "n_bonds": 5,
       "avg_spread_bps": 63.6,
       "avg_years": 6.4,
@@ -1500,7 +1500,7 @@
       "pd_10y": 6.82
     },
     {
-      "issuer": "\u3044\u3059\u309e\u30ea-\u30b7\u30f3\u30b0\u30b5-\u30d3\u30b9",
+      "issuer": "\u3044\u3059\u309e\u30ea\u30fc\u30b7\u30f3\u30b0\u30b5\u30fc\u30d3\u30b9",
       "n_bonds": 1,
       "avg_spread_bps": 63.3,
       "avg_years": 4.3,
@@ -1510,7 +1510,7 @@
       "pd_10y": 6.79
     },
     {
-      "issuer": "\u30b1\u30cd\u30c7\u30a3\u30af\u30b9\u5546\u30ea-\u30c8\u6295",
+      "issuer": "\u30b1\u30cd\u30c7\u30a3\u30af\u30b9\u5546\u30ea\u30fc\u30c8\u6295",
       "n_bonds": 5,
       "avg_spread_bps": 63.4,
       "avg_years": 2.6,
@@ -1560,7 +1560,7 @@
       "pd_10y": 6.76
     },
     {
-      "issuer": "\u4e5d\u5dde\u30ea-\u30b9\u30b5-\u30d3\u30b9",
+      "issuer": "\u4e5d\u5dde\u30ea\u30fc\u30b9\u30b5\u30fc\u30d3\u30b9",
       "n_bonds": 2,
       "avg_spread_bps": 63.1,
       "avg_years": 3.2,
@@ -1570,7 +1570,7 @@
       "pd_10y": 6.77
     },
     {
-      "issuer": "\u962a\u6025\u962a\u795e\u30ea-\u30c8\u6295",
+      "issuer": "\u962a\u6025\u962a\u795e\u30ea\u30fc\u30c8\u6295",
       "n_bonds": 2,
       "avg_spread_bps": 63.0,
       "avg_years": 6.6,
@@ -1600,7 +1600,7 @@
       "pd_10y": 6.74
     },
     {
-      "issuer": "\u30bc\u30f3\u30b7\u30e7-HD",
+      "issuer": "\u30bc\u30f3\u30b7\u30e7\u30fcHD",
       "n_bonds": 3,
       "avg_spread_bps": 62.7,
       "avg_years": 2.2,
@@ -1620,7 +1620,7 @@
       "pd_10y": 6.72
     },
     {
-      "issuer": "\u30b7-\u30af\u30b9",
+      "issuer": "\u30b7\u30fc\u30af\u30b9",
       "n_bonds": 2,
       "avg_spread_bps": 62.3,
       "avg_years": 2.5,
@@ -1640,7 +1640,7 @@
       "pd_10y": 6.68
     },
     {
-      "issuer": "\u307f\u305a\u307b\u30b3-\u30dd\u9280",
+      "issuer": "\u307f\u305a\u307b\u30b3\u30fc\u30dd\u9280",
       "n_bonds": 1,
       "avg_spread_bps": 61.9,
       "avg_years": 0.9,
@@ -1650,7 +1650,7 @@
       "pd_10y": 6.64
     },
     {
-      "issuer": "\u30b9\u30bf-\u30bc\u30f3",
+      "issuer": "\u30b9\u30bf\u30fc\u30bc\u30f3",
       "n_bonds": 1,
       "avg_spread_bps": 62.0,
       "avg_years": 0.6,
@@ -1710,7 +1710,7 @@
       "pd_10y": 6.56
     },
     {
-      "issuer": "\u30bb\u30ac\u30b5\u30df-HD",
+      "issuer": "\u30bb\u30ac\u30b5\u30df\u30fcHD",
       "n_bonds": 1,
       "avg_spread_bps": 61.2,
       "avg_years": 3.9,
@@ -1720,7 +1720,7 @@
       "pd_10y": 6.58
     },
     {
-      "issuer": "\u5927\u548c\u30cf\u30a6\u30b9\u30ea-\u30c8\u6295",
+      "issuer": "\u5927\u548c\u30cf\u30a6\u30b9\u30ea\u30fc\u30c8\u6295",
       "n_bonds": 13,
       "avg_spread_bps": 61.1,
       "avg_years": 6.5,
@@ -1730,7 +1730,7 @@
       "pd_10y": 6.56
     },
     {
-      "issuer": "\u8fd1\u9244\u30b0\u30eb-\u30d7HD",
+      "issuer": "\u8fd1\u9244\u30b0\u30eb\u30fc\u30d7HD",
       "n_bonds": 16,
       "avg_spread_bps": 61.2,
       "avg_years": 5.0,
@@ -1800,7 +1800,7 @@
       "pd_10y": 6.33
     },
     {
-      "issuer": "\u30b0\u30ed-\u30d0\u30eb\u30fb\u30ef\u30f3",
+      "issuer": "\u30b0\u30ed\u30fc\u30d0\u30eb\u30fb\u30ef\u30f3",
       "n_bonds": 6,
       "avg_spread_bps": 58.7,
       "avg_years": 2.4,
@@ -1810,7 +1810,7 @@
       "pd_10y": 6.31
     },
     {
-      "issuer": "\u65e5\u672c\u30a2\u30b3\u30e2\u30c7-\u30b7\u30e7\u30f3F",
+      "issuer": "\u65e5\u672c\u30a2\u30b3\u30e2\u30c7\u30fc\u30b7\u30e7\u30f3F",
       "n_bonds": 4,
       "avg_spread_bps": 58.5,
       "avg_years": 6.3,
@@ -1820,7 +1820,7 @@
       "pd_10y": 6.29
     },
     {
-      "issuer": "\u68ee\u30c8\u30e9\u30b9\u30c8\u7dcf\u5408\u30ea-\u30c8",
+      "issuer": "\u68ee\u30c8\u30e9\u30b9\u30c8\u7dcf\u5408\u30ea\u30fc\u30c8",
       "n_bonds": 7,
       "avg_spread_bps": 58.5,
       "avg_years": 5.7,
@@ -1860,7 +1860,7 @@
       "pd_10y": 6.26
     },
     {
-      "issuer": "ARE\u30db-\u30eb\u30c7\u30a3\u30f3\u30b0\u30b9",
+      "issuer": "ARE\u30db\u30fc\u30eb\u30c7\u30a3\u30f3\u30b0\u30b9",
       "n_bonds": 1,
       "avg_spread_bps": 58.0,
       "avg_years": 2.9,
@@ -2040,7 +2040,7 @@
       "pd_10y": 5.99
     },
     {
-      "issuer": "\u91ce\u6751\u30db-\u30eb\u30c7\u30a3\u30f3\u30b0\u30b9",
+      "issuer": "\u91ce\u6751\u30db\u30fc\u30eb\u30c7\u30a3\u30f3\u30b0\u30b9",
       "n_bonds": 6,
       "avg_spread_bps": 55.3,
       "avg_years": 2.4,
@@ -2100,7 +2100,7 @@
       "pd_10y": 5.88
     },
     {
-      "issuer": "\u30e6\u30ca\u30a4\u30c6\u30c3\u30c9\u30fb\u30a2-\u30d0\u30f3",
+      "issuer": "\u30e6\u30ca\u30a4\u30c6\u30c3\u30c9\u30fb\u30a2\u30fc\u30d0\u30f3",
       "n_bonds": 6,
       "avg_spread_bps": 53.7,
       "avg_years": 4.1,
@@ -2150,7 +2150,7 @@
       "pd_10y": 5.74
     },
     {
-      "issuer": "\u30c0\u30a4\u30c9-\u30b0\u30eb-\u30d7HD",
+      "issuer": "\u30c0\u30a4\u30c9\u30fc\u30b0\u30eb\u30fc\u30d7HD",
       "n_bonds": 2,
       "avg_spread_bps": 53.0,
       "avg_years": 4.6,
@@ -2200,7 +2200,7 @@
       "pd_10y": 5.65
     },
     {
-      "issuer": "\u30bb\u30f3\u30b3-\u30b0\u30eb-\u30d7HD",
+      "issuer": "\u30bb\u30f3\u30b3\u30fc\u30b0\u30eb\u30fc\u30d7HD",
       "n_bonds": 6,
       "avg_spread_bps": 52.2,
       "avg_years": 4.3,
@@ -2260,7 +2260,7 @@
       "pd_10y": 5.57
     },
     {
-      "issuer": "\u30aa\u30ea\u30a8\u30f3\u30c8\u30b3-\u30dd\u30ec-\u30b7\u30e7\u30f3",
+      "issuer": "\u30aa\u30ea\u30a8\u30f3\u30c8\u30b3\u30fc\u30dd\u30ec\u30fc\u30b7\u30e7\u30f3",
       "n_bonds": 16,
       "avg_spread_bps": 51.5,
       "avg_years": 3.0,
@@ -2270,7 +2270,7 @@
       "pd_10y": 5.56
     },
     {
-      "issuer": "\u30d2\u30e5-\u30ea\u30c3\u30af\u30ea-\u30c8\u6295",
+      "issuer": "\u30d2\u30e5\u30fc\u30ea\u30c3\u30af\u30ea\u30fc\u30c8\u6295",
       "n_bonds": 5,
       "avg_spread_bps": 51.3,
       "avg_years": 2.6,
@@ -2280,7 +2280,7 @@
       "pd_10y": 5.54
     },
     {
-      "issuer": "\u30b3\u30b9\u30e2\u30a8\u30cd\u30eb\u30ae-HD",
+      "issuer": "\u30b3\u30b9\u30e2\u30a8\u30cd\u30eb\u30ae\u30fcHD",
       "n_bonds": 3,
       "avg_spread_bps": 51.1,
       "avg_years": 4.2,
@@ -2300,7 +2300,7 @@
       "pd_10y": 5.52
     },
     {
-      "issuer": "\u7a4d\u6c34\u30cf\u30a6\u30b9\u30fb\u30ea-\u30c8\u6295",
+      "issuer": "\u7a4d\u6c34\u30cf\u30a6\u30b9\u30fb\u30ea\u30fc\u30c8\u6295",
       "n_bonds": 7,
       "avg_spread_bps": 50.9,
       "avg_years": 4.5,
@@ -2310,7 +2310,7 @@
       "pd_10y": 5.5
     },
     {
-      "issuer": "ENEOS\u30db-\u30eb\u30c7\u30a3\u30f3\u30b0\u30b9",
+      "issuer": "ENEOS\u30db\u30fc\u30eb\u30c7\u30a3\u30f3\u30b0\u30b9",
       "n_bonds": 3,
       "avg_spread_bps": 50.7,
       "avg_years": 9.3,
@@ -2350,7 +2350,7 @@
       "pd_10y": 5.46
     },
     {
-      "issuer": "NEC\u30ad\u30e3\u30d4\u30bf\u30eb\u30bd\u30ea\u30e5-\u30b7\u30e7\u30f3",
+      "issuer": "NEC\u30ad\u30e3\u30d4\u30bf\u30eb\u30bd\u30ea\u30e5\u30fc\u30b7\u30e7\u30f3",
       "n_bonds": 10,
       "avg_spread_bps": 50.1,
       "avg_years": 2.6,
@@ -2400,7 +2400,7 @@
       "pd_10y": 5.4
     },
     {
-      "issuer": "\u30dd\u30b1\u30c3\u30c8\u30ab-\u30c9",
+      "issuer": "\u30dd\u30b1\u30c3\u30c8\u30ab\u30fc\u30c9",
       "n_bonds": 3,
       "avg_spread_bps": 49.9,
       "avg_years": 2.7,
@@ -2420,7 +2420,7 @@
       "pd_10y": 5.4
     },
     {
-      "issuer": "\u4e09\u83f1\u5730\u6240\u7269\u6d41\u30ea-\u30c8",
+      "issuer": "\u4e09\u83f1\u5730\u6240\u7269\u6d41\u30ea\u30fc\u30c8",
       "n_bonds": 2,
       "avg_spread_bps": 49.9,
       "avg_years": 9.0,
@@ -2440,7 +2440,7 @@
       "pd_10y": 5.38
     },
     {
-      "issuer": "\u30d0\u30ed-\u30db-\u30eb\u30c7\u30a3\u30f3\u30b0\u30b9",
+      "issuer": "\u30d0\u30ed\u30fc\u30db\u30fc\u30eb\u30c7\u30a3\u30f3\u30b0\u30b9",
       "n_bonds": 2,
       "avg_spread_bps": 49.6,
       "avg_years": 2.5,
@@ -2500,7 +2500,7 @@
       "pd_10y": 5.28
     },
     {
-      "issuer": "H.U.\u30b0\u30eb-\u30d7HD",
+      "issuer": "H.U.\u30b0\u30eb\u30fc\u30d7HD",
       "n_bonds": 1,
       "avg_spread_bps": 48.8,
       "avg_years": 2.0,
@@ -2580,7 +2580,7 @@
       "pd_10y": 5.2
     },
     {
-      "issuer": "\u30b5\u30ef\u30a4\u30b0\u30eb-\u30d7HD",
+      "issuer": "\u30b5\u30ef\u30a4\u30b0\u30eb\u30fc\u30d7HD",
       "n_bonds": 2,
       "avg_spread_bps": 47.9,
       "avg_years": 3.4,
@@ -2590,7 +2590,7 @@
       "pd_10y": 5.19
     },
     {
-      "issuer": "\u65e5\u672c\u30ea\u30c6-\u30eb\u30d5\u30a1\u30f3\u30c9",
+      "issuer": "\u65e5\u672c\u30ea\u30c6\u30fc\u30eb\u30d5\u30a1\u30f3\u30c9",
       "n_bonds": 1,
       "avg_spread_bps": 47.9,
       "avg_years": 1.5,
@@ -2600,7 +2600,7 @@
       "pd_10y": 5.18
     },
     {
-      "issuer": "\u68ee\u30d2\u30eb\u30ba\u30ea-\u30c8",
+      "issuer": "\u68ee\u30d2\u30eb\u30ba\u30ea\u30fc\u30c8",
       "n_bonds": 9,
       "avg_spread_bps": 47.9,
       "avg_years": 3.3,
@@ -2660,7 +2660,7 @@
       "pd_10y": 5.17
     },
     {
-      "issuer": "DCM\u30db-\u30eb\u30c7\u30a3\u30f3\u30b0\u30b9",
+      "issuer": "DCM\u30db\u30fc\u30eb\u30c7\u30a3\u30f3\u30b0\u30b9",
       "n_bonds": 1,
       "avg_spread_bps": 47.6,
       "avg_years": 3.3,
@@ -2720,7 +2720,7 @@
       "pd_10y": 5.1
     },
     {
-      "issuer": "JFE\u30db-\u30eb\u30c7\u30a3\u30f3\u30b0\u30b9",
+      "issuer": "JFE\u30db\u30fc\u30eb\u30c7\u30a3\u30f3\u30b0\u30b9",
       "n_bonds": 5,
       "avg_spread_bps": 46.7,
       "avg_years": 6.5,
@@ -2740,7 +2740,7 @@
       "pd_10y": 5.03
     },
     {
-      "issuer": "JX\u30db-\u30eb\u30c7\u30a3\u30f3\u30b0\u30b9",
+      "issuer": "JX\u30db\u30fc\u30eb\u30c7\u30a3\u30f3\u30b0\u30b9",
       "n_bonds": 2,
       "avg_spread_bps": 46.2,
       "avg_years": 5.7,
@@ -2760,7 +2760,7 @@
       "pd_10y": 4.99
     },
     {
-      "issuer": "\u4e09\u83f1\u30b1\u30df\u30ab\u30eb\u30b0\u30eb-\u30d7",
+      "issuer": "\u4e09\u83f1\u30b1\u30df\u30ab\u30eb\u30b0\u30eb\u30fc\u30d7",
       "n_bonds": 3,
       "avg_spread_bps": 46.1,
       "avg_years": 4.2,
@@ -2800,7 +2800,7 @@
       "pd_10y": 4.98
     },
     {
-      "issuer": "\u30ea\u30b3-\u30ea-\u30b9",
+      "issuer": "\u30ea\u30b3\u30fc\u30ea\u30fc\u30b9",
       "n_bonds": 11,
       "avg_spread_bps": 45.9,
       "avg_years": 3.7,
@@ -2840,7 +2840,7 @@
       "pd_10y": 4.95
     },
     {
-      "issuer": "\u30c9\u30f3\u30ad\u30db-\u30c6HD",
+      "issuer": "\u30c9\u30f3\u30ad\u30db\u30fc\u30c6HD",
       "n_bonds": 2,
       "avg_spread_bps": 45.8,
       "avg_years": 1.3,
@@ -2930,7 +2930,7 @@
       "pd_10y": 4.88
     },
     {
-      "issuer": "\u68ee\u30c8\u30e9\u30b9\u30c8\u30ea-\u30c8",
+      "issuer": "\u68ee\u30c8\u30e9\u30b9\u30c8\u30ea\u30fc\u30c8",
       "n_bonds": 2,
       "avg_spread_bps": 45.0,
       "avg_years": 2.1,
@@ -2940,7 +2940,7 @@
       "pd_10y": 4.87
     },
     {
-      "issuer": "\u30b3\u30ca\u30df\u30db-\u30eb\u30c7\u30a3\u30f3\u30b0\u30b9",
+      "issuer": "\u30b3\u30ca\u30df\u30db\u30fc\u30eb\u30c7\u30a3\u30f3\u30b0\u30b9",
       "n_bonds": 2,
       "avg_spread_bps": 44.8,
       "avg_years": 3.1,
@@ -3050,7 +3050,7 @@
       "pd_10y": 4.79
     },
     {
-      "issuer": "\u30ea\u30b3-",
+      "issuer": "\u30ea\u30b3\u30fc",
       "n_bonds": 2,
       "avg_spread_bps": 44.1,
       "avg_years": 3.7,
@@ -3080,7 +3080,7 @@
       "pd_10y": 4.78
     },
     {
-      "issuer": "\u4e38\u4e95\u30b0\u30eb-\u30d7",
+      "issuer": "\u4e38\u4e95\u30b0\u30eb\u30fc\u30d7",
       "n_bonds": 8,
       "avg_spread_bps": 44.0,
       "avg_years": 2.9,
@@ -3160,7 +3160,7 @@
       "pd_10y": 4.74
     },
     {
-      "issuer": "LIXIL\u30b0\u30eb-\u30d7",
+      "issuer": "LIXIL\u30b0\u30eb\u30fc\u30d7",
       "n_bonds": 2,
       "avg_spread_bps": 43.5,
       "avg_years": 2.7,
@@ -3200,7 +3200,7 @@
       "pd_10y": 4.73
     },
     {
-      "issuer": "\u4e09\u548c\u30db-\u30eb\u30c7\u30a3\u30f3\u30b0\u30b9",
+      "issuer": "\u4e09\u548c\u30db\u30fc\u30eb\u30c7\u30a3\u30f3\u30b0\u30b9",
       "n_bonds": 2,
       "avg_spread_bps": 43.3,
       "avg_years": 2.5,
@@ -3290,7 +3290,7 @@
       "pd_10y": 4.61
     },
     {
-      "issuer": "\u30aa-\u30a8\u30b9\u30b8-",
+      "issuer": "\u30aa\u30fc\u30a8\u30b9\u30b8\u30fc",
       "n_bonds": 2,
       "avg_spread_bps": 42.3,
       "avg_years": 3.1,
@@ -3350,7 +3350,7 @@
       "pd_10y": 4.56
     },
     {
-      "issuer": "\u30b0\u30ed-\u30ea-",
+      "issuer": "\u30b0\u30ed\u30fc\u30ea\u30fc",
       "n_bonds": 3,
       "avg_spread_bps": 41.8,
       "avg_years": 5.0,
@@ -3500,7 +3500,7 @@
       "pd_10y": 4.44
     },
     {
-      "issuer": "\u65e5\u6e05\u30aa\u30a4\u30ea\u30aa\u30b0\u30eb-\u30d7",
+      "issuer": "\u65e5\u6e05\u30aa\u30a4\u30ea\u30aa\u30b0\u30eb\u30fc\u30d7",
       "n_bonds": 5,
       "avg_spread_bps": 40.9,
       "avg_years": 5.4,
@@ -3520,7 +3520,7 @@
       "pd_10y": 4.46
     },
     {
-      "issuer": "\u30d2\u30e5-\u30ea\u30c3\u30af",
+      "issuer": "\u30d2\u30e5\u30fc\u30ea\u30c3\u30af",
       "n_bonds": 7,
       "avg_spread_bps": 40.5,
       "avg_years": 2.4,
@@ -3550,7 +3550,7 @@
       "pd_10y": 4.39
     },
     {
-      "issuer": "\u4e09\u83f1UFJ\u30ea-\u30b9",
+      "issuer": "\u4e09\u83f1UFJ\u30ea\u30fc\u30b9",
       "n_bonds": 15,
       "avg_spread_bps": 40.4,
       "avg_years": 3.4,
@@ -3630,7 +3630,7 @@
       "pd_10y": 4.34
     },
     {
-      "issuer": "\u65e5\u63ee\u30db-\u30eb\u30c7\u30a3\u30f3\u30b0\u30b9",
+      "issuer": "\u65e5\u63ee\u30db\u30fc\u30eb\u30c7\u30a3\u30f3\u30b0\u30b9",
       "n_bonds": 2,
       "avg_spread_bps": 40.0,
       "avg_years": 3.7,
@@ -3710,7 +3710,7 @@
       "pd_10y": 4.32
     },
     {
-      "issuer": "\u9577\u8c37\u5de5\u30b3-\u30dd\u30ec-\u30b7\u30e7\u30f3",
+      "issuer": "\u9577\u8c37\u5de5\u30b3\u30fc\u30dd\u30ec\u30fc\u30b7\u30e7\u30f3",
       "n_bonds": 7,
       "avg_spread_bps": 39.6,
       "avg_years": 2.7,
@@ -3760,7 +3760,7 @@
       "pd_10y": 4.27
     },
     {
-      "issuer": "SOMPO\u30db-\u30eb\u30c7\u30a3\u30f3\u30b0\u30b9",
+      "issuer": "SOMPO\u30db\u30fc\u30eb\u30c7\u30a3\u30f3\u30b0\u30b9",
       "n_bonds": 1,
       "avg_spread_bps": 39.1,
       "avg_years": 2.4,
@@ -3770,7 +3770,7 @@
       "pd_10y": 4.25
     },
     {
-      "issuer": "\u307f\u305a\u307b\u30ea-\u30b9",
+      "issuer": "\u307f\u305a\u307b\u30ea\u30fc\u30b9",
       "n_bonds": 26,
       "avg_spread_bps": 39.2,
       "avg_years": 3.2,
@@ -3810,7 +3810,7 @@
       "pd_10y": 4.24
     },
     {
-      "issuer": "\u30e1\u30bf\u30a6\u30a9-\u30bf-",
+      "issuer": "\u30e1\u30bf\u30a6\u30a9\u30fc\u30bf\u30fc",
       "n_bonds": 2,
       "avg_spread_bps": 38.9,
       "avg_years": 3.6,
@@ -3860,7 +3860,7 @@
       "pd_10y": 4.19
     },
     {
-      "issuer": "\u30b9\u30bf\u30f3\u30ec-\u96fb\u6c17",
+      "issuer": "\u30b9\u30bf\u30f3\u30ec\u30fc\u96fb\u6c17",
       "n_bonds": 2,
       "avg_spread_bps": 38.4,
       "avg_years": 4.7,
@@ -3900,7 +3900,7 @@
       "pd_10y": 4.14
     },
     {
-      "issuer": "\u30a8\u30af\u30b7\u30aa\u30b0\u30eb-\u30d7",
+      "issuer": "\u30a8\u30af\u30b7\u30aa\u30b0\u30eb\u30fc\u30d7",
       "n_bonds": 1,
       "avg_spread_bps": 38.0,
       "avg_years": 1.0,
@@ -3940,7 +3940,7 @@
       "pd_10y": 4.14
     },
     {
-      "issuer": "\u30ec\u30f3\u30b4-",
+      "issuer": "\u30ec\u30f3\u30b4\u30fc",
       "n_bonds": 13,
       "avg_spread_bps": 38.1,
       "avg_years": 4.1,
@@ -3960,7 +3960,7 @@
       "pd_10y": 4.14
     },
     {
-      "issuer": "DOWA\u30db-\u30eb\u30c7\u30a3\u30f3\u30b0\u30b9",
+      "issuer": "DOWA\u30db\u30fc\u30eb\u30c7\u30a3\u30f3\u30b0\u30b9",
       "n_bonds": 2,
       "avg_spread_bps": 37.9,
       "avg_years": 2.8,
@@ -3970,7 +3970,7 @@
       "pd_10y": 4.12
     },
     {
-      "issuer": "\u4f4f\u53cb\u4e09\u4e95\u30aa-\u30c8S",
+      "issuer": "\u4f4f\u53cb\u4e09\u4e95\u30aa\u30fc\u30c8S",
       "n_bonds": 8,
       "avg_spread_bps": 37.6,
       "avg_years": 2.6,
@@ -4010,7 +4010,7 @@
       "pd_10y": 4.08
     },
     {
-      "issuer": "\u30b8-\u30a8\u30b9\u30fb\u30e6\u30a2\u30b5",
+      "issuer": "\u30b8\u30fc\u30a8\u30b9\u30fb\u30e6\u30a2\u30b5",
       "n_bonds": 2,
       "avg_spread_bps": 37.5,
       "avg_years": 2.8,
@@ -4050,7 +4050,7 @@
       "pd_10y": 4.08
     },
     {
-      "issuer": "\u30b3\u30ab\u30fb\u30b3-\u30e9BJHD",
+      "issuer": "\u30b3\u30ab\u30fb\u30b3\u30fc\u30e9BJHD",
       "n_bonds": 2,
       "avg_spread_bps": 37.3,
       "avg_years": 2.3,
@@ -4090,7 +4090,7 @@
       "pd_10y": 4.02
     },
     {
-      "issuer": "\u30bb\u30a4\u30b3-\u30a8\u30d7\u30bd\u30f3",
+      "issuer": "\u30bb\u30a4\u30b3\u30fc\u30a8\u30d7\u30bd\u30f3",
       "n_bonds": 7,
       "avg_spread_bps": 36.8,
       "avg_years": 2.5,
@@ -4120,7 +4120,7 @@
       "pd_10y": 4.03
     },
     {
-      "issuer": "\u8208\u9280\u30ea-\u30b9",
+      "issuer": "\u8208\u9280\u30ea\u30fc\u30b9",
       "n_bonds": 1,
       "avg_spread_bps": 37.0,
       "avg_years": 2.9,
@@ -4150,7 +4150,7 @@
       "pd_10y": 4.0
     },
     {
-      "issuer": "\u6771\u6d77\u30ab-\u30dc\u30f3",
+      "issuer": "\u6771\u6d77\u30ab\u30fc\u30dc\u30f3",
       "n_bonds": 3,
       "avg_spread_bps": 36.8,
       "avg_years": 2.9,
@@ -4180,7 +4180,7 @@
       "pd_10y": 3.97
     },
     {
-      "issuer": "\u6771\u4eac\u30bb\u30f3\u30c1\u30e5\u30ea-",
+      "issuer": "\u6771\u4eac\u30bb\u30f3\u30c1\u30e5\u30ea\u30fc",
       "n_bonds": 13,
       "avg_spread_bps": 36.5,
       "avg_years": 2.3,
@@ -4190,7 +4190,7 @@
       "pd_10y": 3.98
     },
     {
-      "issuer": "\u30b8\u30a7\u30a4\u30a8\u30d5\u30a4-HD",
+      "issuer": "\u30b8\u30a7\u30a4\u30a8\u30d5\u30a4\u30fcHD",
       "n_bonds": 8,
       "avg_spread_bps": 36.4,
       "avg_years": 3.1,
@@ -4210,7 +4210,7 @@
       "pd_10y": 3.96
     },
     {
-      "issuer": "\u8299\u84c9\u7dcf\u5408\u30ea-\u30b9",
+      "issuer": "\u8299\u84c9\u7dcf\u5408\u30ea\u30fc\u30b9",
       "n_bonds": 20,
       "avg_spread_bps": 36.3,
       "avg_years": 2.5,
@@ -4350,7 +4350,7 @@
       "pd_10y": 3.88
     },
     {
-      "issuer": "\u5927\u585a\u30db-\u30eb\u30c7\u30a3\u30f3\u30b0\u30b9",
+      "issuer": "\u5927\u585a\u30db\u30fc\u30eb\u30c7\u30a3\u30f3\u30b0\u30b9",
       "n_bonds": 7,
       "avg_spread_bps": 35.6,
       "avg_years": 5.5,
@@ -4460,7 +4460,7 @@
       "pd_10y": 3.79
     },
     {
-      "issuer": "\u30d1-\u30bd\u30ebHD",
+      "issuer": "\u30d1\u30fc\u30bd\u30ebHD",
       "n_bonds": 1,
       "avg_spread_bps": 34.8,
       "avg_years": 3.6,
@@ -4480,7 +4480,7 @@
       "pd_10y": 3.79
     },
     {
-      "issuer": "T&D\u30db-\u30eb\u30c7\u30a3\u30f3\u30b0\u30b9",
+      "issuer": "T&D\u30db\u30fc\u30eb\u30c7\u30a3\u30f3\u30b0\u30b9",
       "n_bonds": 6,
       "avg_spread_bps": 34.7,
       "avg_years": 5.4,
@@ -4620,7 +4620,7 @@
       "pd_10y": 3.65
     },
     {
-      "issuer": "\u30e4\u30f3\u30de-\u30db-\u30eb\u30c7\u30a3\u30f3\u30b0\u30b9",
+      "issuer": "\u30e4\u30f3\u30de\u30fc\u30db\u30fc\u30eb\u30c7\u30a3\u30f3\u30b0\u30b9",
       "n_bonds": 3,
       "avg_spread_bps": 33.3,
       "avg_years": 0.7,
@@ -4650,7 +4650,7 @@
       "pd_10y": 3.62
     },
     {
-      "issuer": "\u30aa-\u30af\u30de",
+      "issuer": "\u30aa\u30fc\u30af\u30de",
       "n_bonds": 1,
       "avg_spread_bps": 32.9,
       "avg_years": 1.0,
@@ -4710,7 +4710,7 @@
       "pd_10y": 3.55
     },
     {
-      "issuer": "\u96fb\u901a\u30b0\u30eb-\u30d7",
+      "issuer": "\u96fb\u901a\u30b0\u30eb\u30fc\u30d7",
       "n_bonds": 2,
       "avg_spread_bps": 32.4,
       "avg_years": 3.1,
@@ -4750,7 +4750,7 @@
       "pd_10y": 3.53
     },
     {
-      "issuer": "\u307f\u305a\u307b\u30b3-\u30dd\u30ec-\u30c8",
+      "issuer": "\u307f\u305a\u307b\u30b3\u30fc\u30dd\u30ec\u30fc\u30c8",
       "n_bonds": 1,
       "avg_spread_bps": 32.2,
       "avg_years": 1.7,
@@ -4850,7 +4850,7 @@
       "pd_10y": 3.47
     },
     {
-      "issuer": "JXTG\u30db-\u30eb\u30c7\u30a3\u30f3\u30b0\u30b9",
+      "issuer": "JXTG\u30db\u30fc\u30eb\u30c7\u30a3\u30f3\u30b0\u30b9",
       "n_bonds": 1,
       "avg_spread_bps": 31.6,
       "avg_years": 1.7,
@@ -4860,7 +4860,7 @@
       "pd_10y": 3.45
     },
     {
-      "issuer": "\u5317\u8d8a\u30b3-\u30dd\u30ec-\u30b7\u30e7\u30f3",
+      "issuer": "\u5317\u8d8a\u30b3\u30fc\u30dd\u30ec\u30fc\u30b7\u30e7\u30f3",
       "n_bonds": 2,
       "avg_spread_bps": 31.7,
       "avg_years": 0.9,
@@ -4880,7 +4880,7 @@
       "pd_10y": 3.46
     },
     {
-      "issuer": "\u5b9d\u30db-\u30eb\u30c7\u30a3\u30f3\u30b0\u30b9",
+      "issuer": "\u5b9d\u30db\u30fc\u30eb\u30c7\u30a3\u30f3\u30b0\u30b9",
       "n_bonds": 3,
       "avg_spread_bps": 31.4,
       "avg_years": 2.8,
@@ -4890,7 +4890,7 @@
       "pd_10y": 3.43
     },
     {
-      "issuer": "\u6771\u6d0b\u88fd\u7f50\u30b0\u30eb-\u30d7HD",
+      "issuer": "\u6771\u6d0b\u88fd\u7f50\u30b0\u30eb\u30fc\u30d7HD",
       "n_bonds": 2,
       "avg_spread_bps": 31.4,
       "avg_years": 3.4,
@@ -4910,7 +4910,7 @@
       "pd_10y": 3.41
     },
     {
-      "issuer": "\u30a2\u30b5\u30d2\u30b0\u30eb-\u30d7HD",
+      "issuer": "\u30a2\u30b5\u30d2\u30b0\u30eb\u30fc\u30d7HD",
       "n_bonds": 14,
       "avg_spread_bps": 31.3,
       "avg_years": 4.1,
@@ -5010,7 +5010,7 @@
       "pd_10y": 3.34
     },
     {
-      "issuer": "\u30d5\u30a1-\u30b9\u30c8\u30ea\u30c6\u30a4\u30ea\u30f3\u30b0",
+      "issuer": "\u30d5\u30a1\u30fc\u30b9\u30c8\u30ea\u30c6\u30a4\u30ea\u30f3\u30b0",
       "n_bonds": 3,
       "avg_spread_bps": 30.4,
       "avg_years": 5.0,
@@ -5220,7 +5220,7 @@
       "pd_10y": 3.07
     },
     {
-      "issuer": "\u30b5\u30f3\u30c8\u30ea-HD",
+      "issuer": "\u30b5\u30f3\u30c8\u30ea\u30fcHD",
       "n_bonds": 7,
       "avg_spread_bps": 27.9,
       "avg_years": 3.8,
@@ -5250,7 +5250,7 @@
       "pd_10y": 3.02
     },
     {
-      "issuer": "\u30e4\u30de\u30c8\u30db-\u30eb\u30c7\u30a4\u30f3\u30b0\u30b9",
+      "issuer": "\u30e4\u30de\u30c8\u30db\u30fc\u30eb\u30c7\u30a4\u30f3\u30b0\u30b9",
       "n_bonds": 1,
       "avg_spread_bps": 27.4,
       "avg_years": 2.6,
@@ -5300,7 +5300,7 @@
       "pd_10y": 2.93
     },
     {
-      "issuer": "\u30bd\u30cb-\u30d5\u30a3\u30ca\u30f3\u30b7\u30e3\u30eb\u30b0\u30eb-\u30d7",
+      "issuer": "\u30bd\u30cb\u30fc\u30d5\u30a3\u30ca\u30f3\u30b7\u30e3\u30eb\u30b0\u30eb\u30fc\u30d7",
       "n_bonds": 1,
       "avg_spread_bps": 26.4,
       "avg_years": 1.7,
@@ -5350,7 +5350,7 @@
       "pd_10y": 2.78
     },
     {
-      "issuer": "\u30ad\u30e6-\u30d4-",
+      "issuer": "\u30ad\u30e6\u30fc\u30d4\u30fc",
       "n_bonds": 1,
       "avg_spread_bps": 25.2,
       "avg_years": 0.2,
@@ -5400,7 +5400,7 @@
       "pd_10y": 2.71
     },
     {
-      "issuer": "\u30c7\u30f3\u30bd-",
+      "issuer": "\u30c7\u30f3\u30bd\u30fc",
       "n_bonds": 5,
       "avg_spread_bps": 24.4,
       "avg_years": 3.8,
@@ -5430,7 +5430,7 @@
       "pd_10y": 2.61
     },
     {
-      "issuer": "\u30bd\u30cb-",
+      "issuer": "\u30bd\u30cb\u30fc",
       "n_bonds": 3,
       "avg_spread_bps": 23.9,
       "avg_years": 1.9,
@@ -5470,7 +5470,7 @@
       "pd_10y": 2.59
     },
     {
-      "issuer": "\u30bd\u30cb-\u30b0\u30eb-\u30d7",
+      "issuer": "\u30bd\u30cb\u30fc\u30b0\u30eb\u30fc\u30d7",
       "n_bonds": 7,
       "avg_spread_bps": 23.4,
       "avg_years": 4.1,
@@ -5490,7 +5490,7 @@
       "pd_10y": 2.52
     },
     {
-      "issuer": "\u660e\u6cbb\u30db-\u30eb\u30c7\u30a3\u30f3\u30b0\u30b9",
+      "issuer": "\u660e\u6cbb\u30db\u30fc\u30eb\u30c7\u30a3\u30f3\u30b0\u30b9",
       "n_bonds": 1,
       "avg_spread_bps": 22.9,
       "avg_years": 0.4,
