@@ -34,7 +34,7 @@ def extract_issuer(name: str) -> str:
         re.sub(
             r"(?<=[^0-9A-Za-z])-",
             "ー",
-            re.sub(r"\s*\d+.*$", "", name),
+            re.sub(r"\s*\d+$", "", name),
         ),
     )
     return unicodedata.normalize("NFKC", s.strip())
