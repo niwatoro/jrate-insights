@@ -9,6 +9,8 @@ import pdfplumber
 import requests
 from bs4 import BeautifulSoup
 
+from metrics import calculate_default_probabilities
+
 DATA_DIR = "data"
 OUTPUT_FILE = os.path.join(DATA_DIR, "market_data.json")
 PDF_PATH = os.path.join(DATA_DIR, "latest_rates.pdf")
@@ -157,9 +159,68 @@ def parse_pdf(pdf_path: str) -> tuple[str | None, list[dict[str, Any]]]:
     return extracted_date, data
 
 
-def main() -> None:
-    """Ingest the latest rates PDF."""
+def download_jsda_csv() -> str | None:
+    """
+    Download the latest Reference Statistical Prices CSV from JSDA.
+    Returns the path to the downloaded file.
+    """
+    base_url = "https://market.jsda.or.jp/shijyo/saiken/baibai/baisanchi"
+    index_url = f"{base_url}/index.html"
+    print(f"Checking JSDA for latest CSV at {index_url}...")
+
     try:
+        # We need to find the link. The browser tool showed it's like:
+        # ./files/2025/S251125.csv
+        # We can try to construct it based on today's date or scrape it.
+        # Scraping is safer.
+        resp = requests.get(index_url)
+        resp.raise_for_status()
+        soup = BeautifulSoup(resp.content, "html.parser")
+
+        # Look for links ending in .csv
+        # The link text usually contains dates like "2025.11.25"
+        csv_links = []
+        for a in soup.find_all("a", href=True):
+            href = a["href"]
+            if href.lower().endswith(".csv") and "files" in href:
+                csv_links.append(href)
+
+        if not csv_links:
+            print("No CSV links found on JSDA page.")
+            return None
+
+        # Sort to get the latest (assuming filenames contain dates like S251125.csv)
+        # S251125 -> 25 (Year 2025) 11 (Month) 25 (Day)
+        # Actually S + YYMMDD
+        csv_links.sort(reverse=True)
+        latest_csv_rel = csv_links[0]
+
+        # Handle relative paths
+        # href might be "./files/..." or "files/..."
+        latest_csv_url = urllib.parse.urljoin(index_url, latest_csv_rel)
+
+        filename = os.path.basename(latest_csv_url)
+        save_path = os.path.join(DATA_DIR, filename)
+
+        print(f"Downloading latest CSV from {latest_csv_url}...")
+        r = requests.get(latest_csv_url)
+        r.raise_for_status()
+
+        with open(save_path, "wb") as f:
+            f.write(r.content)
+
+        print(f"Saved CSV to {save_path}")
+        return save_path
+
+    except Exception as e:
+        print(f"Error downloading JSDA CSV: {e}")
+        return None
+
+
+def main() -> None:
+    """Ingest the latest rates PDF and JSDA CSV."""
+    try:
+        # 1. JPX OIS Rates
         url = get_pdf_url()
         print(f"Found PDF URL: {url}")
 
@@ -168,10 +229,18 @@ def main() -> None:
 
         if not rates:
             print("No rates extracted!")
-            return
+            # We continue even if rates fail, to try credit data
 
         # Fetch BoJ meeting dates
         boj_meetings = fetch_boj_meeting_dates()
+
+        # 2. JSDA Credit Data
+        csv_path = download_jsda_csv()
+        credit_data = []
+        if csv_path:
+            print("Calculating default probabilities...")
+            credit_data = calculate_default_probabilities(csv_path)
+            print(f"Calculated PDs for {len(credit_data)} issuers.")
 
         output = {
             "updated_at": datetime.now().isoformat(),
@@ -179,6 +248,7 @@ def main() -> None:
             "source_url": url,
             "rates": rates,
             "boj_meetings": boj_meetings,
+            "credit_data": credit_data,
         }
 
         with open(OUTPUT_FILE, "w") as f:

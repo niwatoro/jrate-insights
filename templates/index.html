@@ -37,6 +37,7 @@
         <div class="tabs">
             <button class="tab-btn active" onclick="switchTab('probability')">RATE PROBABILITY</button>
             <button class="tab-btn" onclick="switchTab('curve')">YIELD CURVE</button>
+            <button class="tab-btn" onclick="switchTab('credit')">DEFAULT PROBS</button>
             <button class="tab-btn" onclick="switchTab('table')">DATA TABLE</button>
         </div>
 
@@ -81,6 +82,42 @@
                 <div class="chart-container">
                     <canvas id="oisChart"></canvas>
                 </div>
+            </div>
+        </div>
+
+        <div id="view-credit" class="view-section" style="display: none;">
+            <div class="card">
+                <div class="card-header">CORPORATE DEFAULT PROBABILITIES (IMPLIED)</div>
+                {% if data and data.credit_data %}
+                <div style="overflow-x: auto;">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>ISSUER</th>
+                                <th>BONDS</th>
+                                <th>AVG SPREAD (bps)</th>
+                                <th>PD 1Y (%)</th>
+                                <th>PD 3Y (%)</th>
+                                <th>PD 5Y (%)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for row in data.credit_data %}
+                            <tr>
+                                <td style="color: #FF7F00; font-weight: bold;">{{ row.issuer }}</td>
+                                <td>{{ row.n_bonds }}</td>
+                                <td>{{ row.avg_spread_bps }}</td>
+                                <td>{{ row.pd_1y }}</td>
+                                <td>{{ row.pd_3y }}</td>
+                                <td>{{ row.pd_5y }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                {% else %}
+                <div class="loading">NO CREDIT DATA AVAILABLE</div>
+                {% endif %}
             </div>
         </div>
 
@@ -362,6 +399,7 @@
             document.getElementById('view-curve').style.display = 'none';
             document.getElementById('view-table').style.display = 'none';
             document.getElementById('view-probability').style.display = 'none';
+            document.getElementById('view-credit').style.display = 'none';
             document.getElementById('view-' + tabName).style.display = 'block';
         }
         {% endif %}

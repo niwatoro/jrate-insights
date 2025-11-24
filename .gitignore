@@ -28,6 +28,7 @@ Thumbs.db
 # Project specific
 data/*.pdf
 data/*.xlsx
+data/*.csv
 *.log
 
 # Environment variables

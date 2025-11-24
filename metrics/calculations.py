@@ -136,4 +136,5 @@ def process_market_data(data_json: dict[str, Any]) -> dict[str, Any] | None:
         "latest_date": data_json.get("source_date"),
         "updated_at": data_json.get("updated_at"),
         "rate_probabilities": rate_probabilities,
+        "credit_data": data_json.get("credit_data"),
     }
