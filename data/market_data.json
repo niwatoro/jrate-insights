@@ -1,5 +1,5 @@
 {
-  "updated_at": "2025-11-24T09:56:03.018386",
+  "updated_at": "2025-11-24T11:02:02.517749",
   "source_date": "2025/11/21",
   "source_url": "https://www.jpx.co.jp/jscc/cimhll0000000umu-att/SettlementRates_20251121.pdf",
   "rates": [
@@ -2220,7 +2220,7 @@
       "pd_10y": 5.61
     },
     {
-      "issuer": "\u4f4f\u53cb\u751f\u547d",
+      "issuer": "\u4f4f\u53cb\u751f\u547d2023\u57fa\u91d1",
       "n_bonds": 1,
       "avg_spread_bps": 52.0,
       "avg_years": 2.7,
@@ -2240,7 +2240,7 @@
       "pd_10y": 5.61
     },
     {
-      "issuer": "H",
+      "issuer": "H2O \u30ea\u30c6\u30a4\u30ea\u30f3\u30b0",
       "n_bonds": 1,
       "avg_spread_bps": 51.7,
       "avg_years": 3.1,
@@ -4100,7 +4100,7 @@
       "pd_10y": 4.01
     },
     {
-      "issuer": "\u65e5\u672c\u751f\u547d",
+      "issuer": "\u65e5\u672c\u751f\u547d2021\u57fa\u91d1",
       "n_bonds": 1,
       "avg_spread_bps": 36.9,
       "avg_years": 0.7,
