@@ -36,7 +36,7 @@ This project uses `uv` for dependency management.
 2. **Clone the repository**:
 
     ```bash
-    git clone <repository-url>
+    git clone https://github.com/niwatoro/market-implications.git
     cd market-implications
     ```
 
