@@ -142,8 +142,18 @@
         const rates = rawData.map(d => d.rate);
 
         // Prepare JGB data
-        const jgbLabels = jgbData.map(d => d.tenor);
-        const jgbRates = jgbData.map(d => d.rate);
+        const jgbMap = new Map();
+        jgbData.forEach(d => {
+            jgbMap.set(d.tenor, d.rate);
+        });
+
+        const jgbLabels = labels; // Use OIS labels as the master x-axis
+        const jgbRates = labels.map(tenor => {
+            if (jgbMap.has(tenor)) {
+                return jgbMap.get(tenor);
+            }
+            return null; // Return null for missing tenors to create a gap
+        });
 
         const ctx = document.getElementById('oisChart').getContext('2d');
 
