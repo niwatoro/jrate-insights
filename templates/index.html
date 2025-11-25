@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MARKET IMPLICATIONS </title>
+    <meta name="description"
+        content="Real-time market implications dashboard displaying JPX OIS settlement rates, BoJ rate hike probabilities, and JSDA bond transaction prices.">
+    <title>J-RATE INSIGHTS | Tokyo Market Intelligence</title>
     <link rel="stylesheet" href="/static/style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
@@ -12,119 +14,122 @@
 <body>
     <div class="container">
         <header>
-            <h1>MARKET IMPLICATIONS</h1>
-            <div class="subtitle">JPX OIS SETTLEMENT RATES &amp; JSDA BOND TRANSACTION PRICES</div>
+            <h1>J-RATE INSIGHTS</h1>
+            <h2 class="subtitle">JPX OIS &amp; JSDA BOND ANALYTICS</h2>
         </header>
 
-        {% if data %}
-        <div class="info-bar">
-            <div>
-                <span class="status-live"></span>
-                <span>LIVE DATA</span>
+        <main>
+            {% if data %}
+            <div class="info-bar">
+                <div>
+                    <span class="status-live"></span>
+                    <span>LIVE DATA</span>
+                </div>
+                <div class="date">
+                    Latest Update: {{ data.latest_date }}
+                </div>
             </div>
-            <div class="date">
-                Latest Update: {{ data.latest_date }}
-            </div>
-        </div>
-        {% endif %}
+            {% endif %}
 
-        {% if not data %}
-        <div class="card">
-            <div class="loading">NO DATA AVAILABLE - PLEASE RUN INGESTION SCRIPT</div>
-        </div>
-        {% else %}
-
-        <div class="tabs">
-            <button class="tab-btn active" onclick="switchTab('probability')">RATE PROBABILITY</button>
-            <button class="tab-btn" onclick="switchTab('curve')">YIELD CURVE</button>
-            <button class="tab-btn" onclick="switchTab('credit')">DEFAULT PROBS</button>
-        </div>
-
-        <div id="view-probability" class="view-section">
+            {% if not data %}
             <div class="card">
-                {% if data and data.rate_probabilities %}
-                <div class="card-header">
-                    BOJ RATE PROBABILITY - NEXT MEETING: {{ data.rate_probabilities.next_meeting_date }}
-                </div>
-                <div class="chart-container">
-                    <canvas id="probabilityChart"></canvas>
-                </div>
-                <div style="padding: 1rem; background: #0a0a0a; border-top: 1px solid #333333;">
-                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; font-size: 0.85rem;">
-                        <div>
-                            <span style="color: #999999;">CURRENT RATE:</span>
-                            <span style="color: #FF7F00; font-weight: bold; margin-left: 0.5rem;">{{
-                                "%.3f"|format(data.rate_probabilities.current_rate) }}%</span>
-                        </div>
-                        <div>
-                            <span style="color: #999999;">IMPLIED RATE:</span>
-                            <span style="color: #FF7F00; font-weight: bold; margin-left: 0.5rem;">{{
-                                "%.3f"|format(data.rate_probabilities.implied_rate) }}%</span>
-                        </div>
-                        <div>
-                            <span style="color: #999999;">DAYS TO MEETING:</span>
-                            <span style="color: #FF7F00; font-weight: bold; margin-left: 0.5rem;">{{
-                                data.rate_probabilities.days_to_meeting }}</span>
+                <div class="loading">NO DATA AVAILABLE - PLEASE RUN INGESTION SCRIPT</div>
+            </div>
+            {% else %}
+
+            <div class="tabs">
+                <button class="tab-btn active" onclick="switchTab('probability')">RATE PROBABILITY</button>
+                <button class="tab-btn" onclick="switchTab('curve')">YIELD CURVE</button>
+                <button class="tab-btn" onclick="switchTab('credit')">DEFAULT PROBS</button>
+            </div>
+
+            <section id="view-probability" class="view-section">
+                <div class="card">
+                    {% if data and data.rate_probabilities %}
+                    <div class="card-header">
+                        BOJ RATE PROBABILITY - NEXT MEETING: {{ data.rate_probabilities.next_meeting_date }}
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="probabilityChart"></canvas>
+                    </div>
+                    <div style="padding: 1rem; background: #0a0a0a; border-top: 1px solid #333333;">
+                        <div
+                            style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; font-size: 0.85rem;">
+                            <div>
+                                <span style="color: #999999;">CURRENT RATE:</span>
+                                <span style="color: #FF7F00; font-weight: bold; margin-left: 0.5rem;">{{
+                                    "%.3f"|format(data.rate_probabilities.current_rate) }}%</span>
+                            </div>
+                            <div>
+                                <span style="color: #999999;">IMPLIED RATE:</span>
+                                <span style="color: #FF7F00; font-weight: bold; margin-left: 0.5rem;">{{
+                                    "%.3f"|format(data.rate_probabilities.implied_rate) }}%</span>
+                            </div>
+                            <div>
+                                <span style="color: #999999;">DAYS TO MEETING:</span>
+                                <span style="color: #FF7F00; font-weight: bold; margin-left: 0.5rem;">{{
+                                    data.rate_probabilities.days_to_meeting }}</span>
+                            </div>
                         </div>
                     </div>
+                    {% else %}
+                    <div class="card-header">BOJ RATE PROBABILITY</div>
+                    <div class="loading">NO MEETING DATA AVAILABLE</div>
+                    {% endif %}
                 </div>
-                {% else %}
-                <div class="card-header">BOJ RATE PROBABILITY</div>
-                <div class="loading">NO MEETING DATA AVAILABLE</div>
-                {% endif %}
-            </div>
-        </div>
+            </section>
 
-        <div id="view-curve" class="view-section" style="display: none;">
-            <div class="card">
-                <div class="card-header">JPX OIS SETTLEMENT RATES</div>
-                <div class="chart-container">
-                    <canvas id="oisChart"></canvas>
+            <section id="view-curve" class="view-section" style="display: none;">
+                <div class="card">
+                    <div class="card-header">JPX OIS SETTLEMENT RATES</div>
+                    <div class="chart-container">
+                        <canvas id="oisChart"></canvas>
+                    </div>
                 </div>
-            </div>
-        </div>
+            </section>
 
-        <div id="view-credit" class="view-section" style="display: none;">
-            <div class="card">
-                <div class="card-header">CORPORATE DEFAULT PROBABILITIES (IMPLIED)</div>
-                {% if data and data.credit_data %}
-                <div style="overflow-x: auto;">
-                    <table class="data-table">
-                        <thead>
-                            <tr>
-                                <th>ISSUER</th>
-                                <th>BONDS</th>
-                                <th>AVG SPREAD (bps)</th>
-                                <th>PD 1Y (%)</th>
-                                <th>PD 3Y (%)</th>
-                                <th>PD 5Y (%)</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {% for row in data.credit_data %}
-                            <tr>
-                                <td style="color: #FF7F00; font-weight: bold;">{{ row.issuer }}</td>
-                                <td>{{ row.n_bonds }}</td>
-                                <td>{{ "{:.2f}".format(row.avg_spread_bps) }}</td>
-                                <td>{{ "{:.2f}".format(row.pd_1y) }}</td>
-                                <td>{{ "{:.2f}".format(row.pd_3y) }}</td>
-                                <td>{{ "{:.2f}".format(row.pd_5y) }}</td>
-                            </tr>
-                            {% endfor %}
-                        </tbody>
-                    </table>
+            <section id="view-credit" class="view-section" style="display: none;">
+                <div class="card">
+                    <div class="card-header">CORPORATE DEFAULT PROBABILITIES (IMPLIED)</div>
+                    {% if data and data.credit_data %}
+                    <div style="overflow-x: auto;">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>ISSUER</th>
+                                    <th>BONDS</th>
+                                    <th>AVG SPREAD (bps)</th>
+                                    <th>PD 1Y (%)</th>
+                                    <th>PD 3Y (%)</th>
+                                    <th>PD 5Y (%)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for row in data.credit_data %}
+                                <tr>
+                                    <td style="color: #FF7F00; font-weight: bold;">{{ row.issuer }}</td>
+                                    <td>{{ row.n_bonds }}</td>
+                                    <td>{{ "{:.2f}".format(row.avg_spread_bps) }}</td>
+                                    <td>{{ "{:.2f}".format(row.pd_1y) }}</td>
+                                    <td>{{ "{:.2f}".format(row.pd_3y) }}</td>
+                                    <td>{{ "{:.2f}".format(row.pd_5y) }}</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    {% else %}
+                    <div class="loading">NO CREDIT DATA AVAILABLE</div>
+                    {% endif %}
                 </div>
-                {% else %}
-                <div class="loading">NO CREDIT DATA AVAILABLE</div>
-                {% endif %}
-            </div>
-        </div>
+            </section>
 
-        {% endif %}
+            {% endif %}
+        </main>
 
-        <div class="footer">
+        <footer class="footer">
             DATA SOURCE: JPX JSCC SETTLEMENT RATES, JSDA BOND TRANSACTION PRICES
-        </div>
+        </footer>
     </div>
 
     <script>
