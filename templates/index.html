@@ -14,8 +14,14 @@
 <body>
     <div class="container">
         <header>
-            <h1>J-RATE INSIGHTS</h1>
-            <h2 class="subtitle">JPX OIS &amp; JSDA BOND ANALYTICS</h2>
+            <div>
+                <h1>J-RATE INSIGHTS</h1>
+                <h2 class="subtitle">JPX OIS &amp; JSDA BOND ANALYTICS</h2>
+            </div>
+            <nav class="nav-links">
+                <a href="/" class="{% if active_page == 'dashboard' %}active{% endif %}">Dashboard</a>
+                <a href="/methodology" class="{% if active_page == 'methodology' %}active{% endif %}">Methodology</a>
+            </nav>
         </header>
 
         <main>
@@ -135,7 +141,9 @@
         </main>
 
         <footer class="footer">
-            DATA SOURCE: JPX JSCC SETTLEMENT RATES, JSDA BOND TRANSACTION PRICES
+            <span>DATA SOURCE: JPX JSCC SETTLEMENT RATES, JSDA BOND TRANSACTION PRICES</span>
+            <span class="footer-link">GITHUB: <a href="https://github.com/niwatoro/jrate-insights" target="_blank"
+                    rel="noopener noreferrer">niwatoro/jrate-insights</a></span>
         </footer>
     </div>
 

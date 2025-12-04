@@ -55,6 +55,11 @@ header {
     border-bottom: 3px solid var(--bloomberg-orange);
     padding: 1rem 2rem;
     margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 h1 {
@@ -75,6 +80,34 @@ h1 {
     margin-top: 0.25rem;
     text-transform: uppercase;
     letter-spacing: 1px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+    font-family: var(--font-family-display);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.nav-links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding-bottom: 0.2rem;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s ease, border-bottom-color 0.2s ease;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+    color: var(--text-primary);
+    border-bottom-color: var(--text-primary);
+}
+
+.nav-links a.active {
+    color: var(--bloomberg-orange);
+    border-bottom-color: var(--bloomberg-orange);
 }
 
 /* Info bar */
@@ -158,6 +191,46 @@ h1 {
     width: 100%;
     padding: 1.5rem;
     background: #000000;
+}
+
+.card-body {
+    padding: 1rem 1.5rem 1.5rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.card-body p {
+    margin-top: 0;
+}
+
+.methodology {
+    padding-bottom: 3rem;
+}
+
+.method-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.method-block {
+    background: #000000;
+    border: 1px solid var(--border-color);
+    padding: 1rem;
+    min-height: 160px;
+}
+
+.method-block h3 {
+    margin-top: 0;
+    color: var(--bloomberg-orange);
+    font-size: 0.9rem;
+    font-family: var(--font-family-display);
+    letter-spacing: 1px;
+}
+
+.method-block p {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
 }
 
 /* Table - Bloomberg data grid style */
@@ -251,6 +324,20 @@ h1 {
     font-family: var(--font-family-display);
     text-transform: uppercase;
     letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    align-items: center;
+}
+
+.footer a {
+    color: var(--bloomberg-orange);
+    text-decoration: none;
+}
+
+.footer a:hover,
+.footer a:focus {
+    text-decoration: underline;
 }
 
 /* Loading */

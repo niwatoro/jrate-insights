@@ -34,7 +34,7 @@ def index() -> str:
     """
     raw_data = load_data()
     processed = process_market_data(raw_data) if raw_data else None
-    return render_template("index.html", data=processed)
+    return render_template("index.html", data=processed, active_page="dashboard")
 
 
 @app.route("/api/data")
@@ -50,6 +50,12 @@ def get_data() -> Response:
         process_market_data(raw_data) if raw_data else {"error": "No data available"}
     )
     return jsonify(result)
+
+
+@app.route("/methodology")
+def methodology() -> str:
+    """Render the methodology page that explains the core calculations."""
+    return render_template("methodology.html", active_page="methodology")
 
 
 if __name__ == "__main__":

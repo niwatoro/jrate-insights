@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Methodology reference summarizing the formulas behind the J-RATE INSIGHTS dashboard.">
+    <title>Methodology | J-RATE INSIGHTS</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div>
+                <h1>J-RATE INSIGHTS</h1>
+                <h2 class="subtitle">JPX OIS &amp; JSDA BOND ANALYTICS</h2>
+            </div>
+            <nav class="nav-links">
+                <a href="/" class="{% if active_page == 'dashboard' %}active{% endif %}">Dashboard</a>
+                <a href="/methodology" class="{% if active_page == 'methodology' %}active{% endif %}">Methodology</a>
+            </nav>
+        </header>
+
+        <main class="methodology">
+            <section class="card">
+                <div class="card-header">Purpose</div>
+                <div class="card-body">
+                    <p>
+                        This page condenses the theory in <a href="https://github.com/niwatoro/jrate-insights#theory"
+                            target="_blank" rel="noopener noreferrer">README.md</a> and links each formula to the
+                        production code (see <code>metrics/</code>). It is intended for analysts who want a quick
+                        refresher on how the dashboard turns JSDA and JPX data into implied probabilities.
+                    </p>
+                </div>
+            </section>
+
+            <section class="card">
+                <div class="card-header">Data Flow</div>
+                <div class="card-body">
+                    <div class="method-grid">
+                        <div class="method-block">
+                            <h3>1. Ingestion</h3>
+                            <p>
+                                Scheduled jobs download JSDA bond quotes and JPX JSCC settlement rates into
+                                <code>data/market_data.json</code> (see README “Project Structure”).
+                            </p>
+                        </div>
+                        <div class="method-block">
+                            <h3>2. Processing</h3>
+                            <p>
+                                <code>process_market_data</code> ( <code>metrics/calculations.py</code> ) normalizes
+                                tenors, derives the BoJ rate distribution, and attaches credit metrics.
+                            </p>
+                        </div>
+                        <div class="method-block">
+                            <h3>3. Presentation</h3>
+                            <p>
+                                The Flask route <code>/</code> wires the processed payload to the charts in
+                                <code>templates/index.html</code>, yielding the dashboard views.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card">
+                <div class="card-header">BoJ Rate Probability Model</div>
+                <div class="card-body">
+                    <p>
+                        Following the README derivation, the expected overnight rate over the policy period satisfies
+                        <code>E[r] = (r_post (D_pre + D_post) - r_pre D_pre) / D_post</code>, where
+                        <code>r_post</code> is the OIS quote spanning the next decision window, <code>r_pre</code> is
+                        today’s 1D rate, and <code>D_*</code> measure days before/after the meeting. The helper
+                        <code>calculate_implied_rate</code> inside <code>calculate_rate_probabilities</code>
+                        interpolates the necessary term structure point to evaluate this identity.
+                    </p>
+                    <p>
+                        With a 25 bps policy increment, the hike probability is
+                        <code>p = (E[r] - r_pre) / 0.25</code>. Positive <code>p</code> maps to the “hike” bar, negative
+                        values are treated as cuts, and everything is clipped to 0–100% to build the stacked scenario
+                        chart shown on the dashboard tab.
+                    </p>
+                </div>
+            </section>
+
+            <section class="card">
+                <div class="card-header">Corporate Default Probabilities</div>
+                <div class="card-body">
+                    <p>
+                        The README’s “Probability of Default” section is implemented in
+                        <code>metrics/credit.py</code>. Government bonds are used to interpolate a term-matched
+                        risk-free curve, which is subtracted from each corporate yield to form a spread
+                        <code>s</code>.
+                    </p>
+                    <p>
+                        Using a 10% recovery assumption (<code>LGD = 90%</code>), the hazard rate for issuer
+                        <code>i</code> is <code>lambda_i = s_i / (1 - R)</code>. Assuming a constant hazard rate, the
+                        default probability over horizon <code>T</code> is <code>PD_i(T) = 1 - exp(-lambda_i T)</code>.
+                        The resulting 1Y/3Y/5Y metrics populate the “Default Probs” table, sorted by 5-year risk.
+                    </p>
+                </div>
+            </section>
+
+            <section class="card">
+                <div class="card-header">JGB Yield Curve Overlay</div>
+                <div class="card-body">
+                    <p>
+                        <code>extract_jgb_curve</code> samples tradeable government issues, groups them by years to
+                        maturity, and interpolates to standard tenors (1D to 40Y). The resulting array is injected as
+                        <code>data.jgb_curve</code>, letting the front-end plot government yields alongside OIS rates
+                        for quick sanity checks on term premia.
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <span>DATA SOURCE: JPX JSCC SETTLEMENT RATES, JSDA BOND TRANSACTION PRICES</span>
+            <span class="footer-link">GITHUB: <a href="https://github.com/niwatoro/jrate-insights" target="_blank"
+                    rel="noopener noreferrer">niwatoro/jrate-insights</a></span>
+        </footer>
+    </div>
+</body>
+
+</html>
