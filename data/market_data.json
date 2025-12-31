@@ -1,19 +1,19 @@
 {
-  "updated_at": "2025-12-30T11:21:48.745605",
-  "source_date": "2025/12/29",
-  "source_url": "https://www.jpx.co.jp/jscc/cimhll0000000umu-att/SettlementRates_20251229.pdf",
+  "updated_at": "2025-12-31T11:21:42.988035",
+  "source_date": "2025/12/30",
+  "source_url": "https://www.jpx.co.jp/jscc/cimhll0000000umu-att/SettlementRates_20251230.pdf",
   "rates": [
     {
       "tenor": "1D",
-      "rate": 0.727
+      "rate": 0.728
     },
     {
       "tenor": "1W",
-      "rate": 0.7275
+      "rate": 0.72729
     },
     {
       "tenor": "2W",
-      "rate": 0.72729
+      "rate": 0.7274
     },
     {
       "tenor": "3W",
@@ -21,127 +21,127 @@
     },
     {
       "tenor": "1M",
-      "rate": 0.72792
+      "rate": 0.72787
     },
     {
       "tenor": "2M",
-      "rate": 0.72883
+      "rate": 0.7287
     },
     {
       "tenor": "3M",
-      "rate": 0.73375
+      "rate": 0.73344
     },
     {
       "tenor": "4M",
-      "rate": 0.74308
+      "rate": 0.74545
     },
     {
       "tenor": "5M",
-      "rate": 0.75833
+      "rate": 0.76493
     },
     {
       "tenor": "6M",
-      "rate": 0.7782
+      "rate": 0.783
     },
     {
       "tenor": "7M",
-      "rate": 0.79685
+      "rate": 0.80344
     },
     {
       "tenor": "8M",
-      "rate": 0.8177
+      "rate": 0.82458
     },
     {
       "tenor": "9M",
-      "rate": 0.83688
+      "rate": 0.84495
     },
     {
       "tenor": "10M",
-      "rate": 0.85665
+      "rate": 0.86453
     },
     {
       "tenor": "11M",
-      "rate": 0.87711
+      "rate": 0.88599
     },
     {
       "tenor": "1Y",
-      "rate": 0.89624
+      "rate": 0.9066
     },
     {
       "tenor": "15M",
-      "rate": 0.955
+      "rate": 0.96875
     },
     {
       "tenor": "18M",
-      "rate": 1.01613
+      "rate": 1.03313
     },
     {
       "tenor": "2Y",
-      "rate": 1.13208
+      "rate": 1.15375
     },
     {
       "tenor": "3Y",
-      "rate": 1.29125
+      "rate": 1.31833
     },
     {
       "tenor": "4Y",
-      "rate": 1.4
+      "rate": 1.42583
     },
     {
       "tenor": "5Y",
-      "rate": 1.485
+      "rate": 1.50958
     },
     {
       "tenor": "6Y",
-      "rate": 1.56125
+      "rate": 1.58458
     },
     {
       "tenor": "7Y",
-      "rate": 1.6375
+      "rate": 1.65875
     },
     {
       "tenor": "8Y",
-      "rate": 1.71125
+      "rate": 1.73146
     },
     {
       "tenor": "9Y",
-      "rate": 1.7875
+      "rate": 1.80667
     },
     {
       "tenor": "10Y",
-      "rate": 1.86565
+      "rate": 1.88199
     },
     {
       "tenor": "11Y",
-      "rate": 1.94333
+      "rate": 1.95842
     },
     {
       "tenor": "12Y",
-      "rate": 2.02167
+      "rate": 2.035
     },
     {
       "tenor": "15Y",
-      "rate": 2.24184
+      "rate": 2.2526
     },
     {
       "tenor": "20Y",
-      "rate": 2.55125
+      "rate": 2.55675
     },
     {
       "tenor": "25Y",
-      "rate": 2.74375
+      "rate": 2.745
     },
     {
       "tenor": "30Y",
-      "rate": 2.85003
+      "rate": 2.85344
     },
     {
       "tenor": "35Y",
-      "rate": 2.915
+      "rate": 2.91438
     },
     {
       "tenor": "40Y",
-      "rate": 2.95792
+      "rate": 2.95938
     }
   ],
   "boj_meetings": [
