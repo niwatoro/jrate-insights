@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-19T11:37:47.994297",
+  "updated_at": "2026-03-20T11:34:16.756573",
   "source_date": "2026/3/19",
   "source_url": "https://www.jpx.co.jp/jscc/cimhll0000000umu-att/SettlementRates_20260319.pdf",
   "rates": [
@@ -155,7 +155,8 @@
     "2026-12-18",
     "2026-12-19",
     "2027-01-23",
-    "2027-01-24"
+    "2027-01-24",
+    "2027-03-19"
   ],
   "credit_data": [
     {
