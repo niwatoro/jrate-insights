@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-21T16:50:12.181530",
+  "updated_at": "2026-09-22T15:26:52.555563",
   "source_date": "2026/9/18",
   "source_url": "https://www.jpx.co.jp/jscc/cimhll0000000umu-att/SettlementRates_20260918.pdf",
   "rates": [
@@ -145,7 +145,6 @@
     }
   ],
   "boj_meetings": [
-    "2026-09-22",
     "2026-10-29",
     "2026-10-30",
     "2026-12-17",
